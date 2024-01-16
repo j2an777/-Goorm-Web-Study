@@ -1,0 +1,92 @@
+.reposContainer {
+    width : 100%;
+    min-height : 25vh;
+    margin : 0 0 20px 0;
+    padding : 0;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.reposContents {
+    width : 100%;
+    height : 100%;
+    margin: 0;
+    padding : 0;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.reposInfo {
+    width : 100%;
+    height : 100%;
+    margin : 0;
+    margin-top: 20px;
+    padding : 0 15px 0 15px;
+    display : flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #e9e9e9;
+    border-radius: 4px;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.reposInfo:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
+}
+
+.reposList {
+    width : 100%;
+    height : 100%;
+    margin : 0;
+    padding : 10px 0 10px 0;
+    display : flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.reposLeft {
+    width : 40%;
+    height : 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.reposLeft p {
+    color: #4582EC;
+}
+
+.reposRight {
+    width : 60%;
+    height : 100%;
+    margin : 0;
+    padding : 0;
+    display: flex;
+    align-items: center;
+}
+
+.reposRight p {
+    padding: 5px 10px 5px 10px;
+    margin-right: 20px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    color: white;
+    font-size: 12px;
+}
+
+.reposRight p:nth-child(1) {
+    background-color: #4582EC;
+}
+
+.reposRight p:nth-child(2) {
+    background-color: #ADB5BD;
+}
+
+.reposRight p:nth-child(3) {
+    background-color: #01B875;
+}

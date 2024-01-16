@@ -1,0 +1,20 @@
+.headerContainer {
+    width : 100%;
+    height : 5vh;
+    margin : 0;
+    padding : 10px;
+    display: flex;
+    align-items: center;
+    background-color: #4582EC;
+}
+
+.headerContainer p {
+    color : white;
+    font-size: 22px;
+    padding: 0;
+    margin : 0;
+}
+
+.headerContainer p:hover {
+    cursor: pointer;
+}

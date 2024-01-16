@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="/img/github.png">
+        <title>Github Finder</title>
+        <link rel="stylesheet" href="/style/footer.css">
+        <link rel="stylesheet" href="/style/general.css">
+        <link rel="stylesheet" href="/style/header.css">
+        <link rel="stylesheet" href="/style/profile.css">
+        <link rel="stylesheet" href="/style/search.css">
+        <link rel="stylesheet" href="/style/repos.css">
+    </head>
+    <body>
+        <header>
+            <div class="headerContainer">
+                <p>GitHub Finder</p>
+            </div>
+        </header>
+
+        <main>
+            <div class="searchContainer">
+                <div class="searchContents">
+                    <h1>Search Github Users</h1>
+                    <p>Enter a username to fetch a user profile and repos</p>
+                    <input type="text" placeholder="username" class="scname" id="scName"/>
+                </div>
+            </div>
+
+            <div class="profileContainer">
+                <div class="profileContents">
+                    <div class="pfBox">
+                        <div class="pfleft">
+                            <div class="pfImg" id="pfImg"></div>
+                        </div>
+                        <div class="pfright">
+                            <div class="categories">
+                                <p class="cgBox">Public Repos: <span></span></p>
+                                <p class="cgBox">Public Gists: <span></span></p>
+                                <p class="cgBox">Followers: <span></span></p>
+                                <p class="cgBox">Following: <span></span></p>
+                            </div>
+                            <div class="info">
+                                <p>Company: </p>
+                                <p>Website/Blog: </p>
+                                <p>Location: </p>
+                                <p>Member Since: </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pfBtn">
+                        <div class="pfleft2">
+                            <div type="button" class="viewPf">
+                                <a href="">View Profile</a> 
+                            </div>
+                        </div>
+                        <div class="pfright2"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="reposContainer">
+                <div class="reposContents">
+                    <div class="reposTitle">
+                        <h1>Latest Repos</h1>
+                    </div>
+                </div>
+            </div>
+        </main>
+        
+        <Footer>
+            <p>Github Finder &copy;</p>
+        </Footer>
+        <script src="github.js"></script>
+    </body>
+</html>
