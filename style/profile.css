@@ -208,3 +208,27 @@
     height : 100%;
     object-fit: fill;
 }
+
+@media (max-width : 768px) {
+    .pfright, .pfright2 {
+        display: none;
+    }
+
+    .pfBox {
+        position: relative;
+    }
+
+    .pfleft {
+        position : absolute;
+        top : 50%;
+        left : 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .pfleft2 {
+        position : absolute;
+        top : 50%;
+        left : 50%;
+        transform: translate(-50%, -10%);
+    }
+}

@@ -90,3 +90,9 @@
 .reposRight p:nth-child(3) {
     background-color: #01B875;
 }
+
+@media (max-width : 768px) {
+    .reposRight {
+        display : none;
+    }
+}
