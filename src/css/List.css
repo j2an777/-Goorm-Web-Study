@@ -1,0 +1,53 @@
+.listContainer {
+    width : 100%;
+    min-height : auto;
+    display : flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin : 0;
+    padding : 0;
+}
+
+.listItem {
+    width : 100%;
+    height : auto;
+    margin : 0 0 20px 0;
+    padding : 0 10px;
+    box-sizing: border-box;
+    display : flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #EAEAEA;
+    border-radius: 2px;
+    transition: all 0.3s;
+    transform: scale(1);
+}
+
+.listItem:hover {
+    transform: scale(1.03);
+    cursor: pointer;
+}
+
+.listPay {
+    font-size: 16px;
+}
+
+.listCost {
+    color: #9D9D9D;
+}
+
+.toolBox {
+    width : 10%;
+    display : flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#trash {
+    color: red;
+}
+
+#pen {
+    color: green;
+}

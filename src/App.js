@@ -1,25 +1,24 @@
-import logo from './logo.svg';
 import './App.css';
+import React, { useState } from'react';
+import Form from './components/Form';
+import Result from './components/Result';
+
+const initialExpenses = localStorage.getItem('expenses')? JSON.parse(localStorage.getItem('expenses')) : [];
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    const [expenses, setExpenses] = useState(initialExpenses);
+    const [message, setMessage] = useState({ text: '', type: ''});
+
+    return (
+      <div className='crud-container'>
+        <div className='crud-box'>
+          {message && <div className={`messageBox ${message.type}`}>{ message.text }</div>}
+          <h1>예산 계산기</h1>
+          <Form setExpenses = {setExpenses} expenses = {expenses} setMessage = {setMessage}/>
+          <Result expenses = {expenses}/>
+        </div>
+      </div>
+    );
 }
 
 export default App;
