@@ -19,7 +19,7 @@ export default function Form({ expenses, setExpenses, setMessage }) {
 
         if (editing) {
             // 수정 모드
-            const updatedExpenses = setExpenses(prev => prev.map(item => item.id === editing ? { ...item, pay, cost } : item));
+            const updatedExpenses = expenses.map(item => item.id === editing ? { ...item, pay, cost } : item);
             updateExpenses(updatedExpenses);
             setMessage({text: '아이템이 수정되었습니다.', type: 'edit'});
             setEditing(null);
@@ -45,14 +45,13 @@ export default function Form({ expenses, setExpenses, setMessage }) {
     };
 
     const handleDeleteAll = () => {
-        const updatedExpenses = setExpenses([]);
-        updateExpenses(updatedExpenses);
+        updateExpenses([]);
         setMessage({text: '아이템이 모두 삭제되었습니다.', type: 'delete'});
         setTimeout(() => setMessage({text: '', type: ''}), 3000);
     };
 
     const handleDeleteItem = (id) => {
-        const updatedExpenses = setExpenses(prev => prev.filter(item => item.id!== id));
+        const updatedExpenses = expenses.filter(item => item.id !== id);
         updateExpenses(updatedExpenses);
         setMessage({text: '아이템이 삭제되었습니다.', type: 'delete'});
         setTimeout(() => setMessage({text: '', type: ''}), 3000);
